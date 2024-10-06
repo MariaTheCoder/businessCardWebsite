@@ -17,6 +17,7 @@ body {
 .card {
   width: var(--card-width);
   height: calc(var(--card-width) * 55 / 85);
+  max-height: 100dvh;
 
   background-color: aquamarine;
 }
