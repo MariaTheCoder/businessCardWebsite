@@ -8,9 +8,17 @@
 
 :root {
   --card-width: 75vw;
+
+  /* Color scheme*/
+  --text: hsl(325, 35%, 7%);
+  --background: hsl(330, 40%, 98%);
+  --primary: hsl(324, 37%, 55%);
+  --secondary: hsl(45, 37%, 74%);
+  --accent: hsl(75, 37%, 64%);
 }
 
 body {
+  background-color: var(--background);
   display: flex;
 }
 
@@ -19,13 +27,14 @@ body {
   height: calc(var(--card-width) * 55 / 85);
   max-height: 100dvh;
 
-  background-color: aquamarine;
+  background-color: transparent;
+  border: 1px solid black;
 }
 
 .sidebar {
   width: calc(100dvw - var(--card-width));
 
-  background-color: pink;
+  background-color: var(--accent);
 }
 
 @media only screen and (max-width: 600px) {
