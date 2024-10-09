@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mynerve&display=swap");
+
 *,
 *::before,
 *::after {
@@ -10,6 +12,8 @@
   --card-width: 75vw;
   --std-margin: 1em;
   --small-width: 0.5em;
+
+  font-family: sans-serif;
 
   /* Color scheme*/
   --text: hsl(325, 35%, 7%);
@@ -63,6 +67,10 @@ body {
 
 h1 {
   margin: calc(var(--std-margin) * 0.75) 0 calc(var(--std-margin) * 0.25) 0;
+}
+
+em {
+  font-family: "Mynerve", cursive;
 }
 
 .image {
