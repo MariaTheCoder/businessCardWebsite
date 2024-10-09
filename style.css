@@ -50,12 +50,14 @@ body {
 }
 
 .text {
-  width: 35rem;
-  background-color: brown;
+  padding: calc(2 * var(--std-margin)) 0 0 calc(2 * var(--std-margin));
+  width: 70%;
+  background-color: var(--background);
 }
 
 .image {
-  width: calc(100% - 35rem);
+  padding: calc(2 * var(--std-margin)) calc(2 * var(--std-margin)) 0 0;
+  width: 30%;
   background-color: blue;
 }
 
