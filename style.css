@@ -50,9 +50,19 @@ body {
 }
 
 .text {
-  padding: calc(2 * var(--std-margin)) 0 0 calc(2 * var(--std-margin));
+  padding: calc(2 * var(--std-margin)) 0 calc(2 * var(--std-margin))
+    calc(2 * var(--std-margin));
   width: 70%;
   background-color: var(--background);
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: calc(var(--std-margin) * 0.75) 0 calc(var(--std-margin) * 0.25) 0;
 }
 
 .image {
