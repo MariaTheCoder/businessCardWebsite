@@ -8,6 +8,8 @@
 
 :root {
   --card-width: 75vw;
+  --std-margin: 1em;
+  --small-width: 0.5em;
 
   /* Color scheme*/
   --text: hsl(325, 35%, 7%);
@@ -25,16 +27,18 @@ body {
 .card {
   width: var(--card-width);
   height: calc(var(--card-width) * 55 / 85);
-  max-height: 100dvh;
+  max-height: calc(100dvh - 2 * var(--std-margin));
 
   background-color: transparent;
-  border: 1px solid black;
+  margin: var(--std-margin);
+  border: 1px solid darkgray;
 }
 
 .sidebar {
   width: calc(100dvw - var(--card-width));
 
   background-color: var(--accent);
+  /* margin: var(--std-margin) var(--std-margin) var(--std-margin) 0; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -43,7 +47,11 @@ body {
     flex-direction: column;
   }
 
-  .card,
+  .card {
+    width: calc(100dvw - 2 * var(--small-width));
+    margin: var(--small-width);
+  }
+
   .sidebar {
     width: 100dvw;
   }
